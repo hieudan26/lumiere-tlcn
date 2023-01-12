@@ -1,0 +1,39 @@
+spring:
+  datasource: DATA_SOURCE
+    url: 
+    username: USER_NAME
+    password: PASS_WORD
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    hikari:
+      maxLifeTime : 600000
+  jpa:
+    show-sql: true
+    defer-datasource-initialization: true
+    generate-ddl: true
+    properties:
+      hibernate.format_sql: true
+
+  properties:
+    hibernate:
+      legacy_limit_handler:true
+
+  hibernate:
+    ddl-auto: update
+  sql:
+    init:
+      mode: always
+  mvc:
+    throw-exception-if-no-handler-found=true:
+  redis:
+    host: localhost
+    port: 6379
+  cache:
+    type: redis
+
+server:
+  servlet:
+    context-path: /v1
+
+
+
+

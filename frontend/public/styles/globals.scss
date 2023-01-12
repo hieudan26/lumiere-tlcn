@@ -1,0 +1,79 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import "./app.scss";
+
+@font-face {
+  font-family: "Montserrat Bold";
+  src: local("Montserrat Bold"), url(../fonts/Montserrat-Bold.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Montserrat BoldItalic";
+  src: local("Montserrat BoldItalic"), url(../fonts/Montserrat-BoldItalic.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Montserrat Italic";
+  src: local("Montserrat Italic"), url(../fonts/Montserrat-Italic.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Montserrat Regular";
+  src: local("Montserrat Regular"), url(../fonts/Montserrat-Regular.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Montserrat ExtraBold";
+  src: local("Montserrat ExtraBold"), url(../fonts/Montserrat-ExtraBold.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Montserrat ExtraBoldItalic";
+  src: local("Montserrat ExtraBoldItalic"), url(../fonts/Montserrat-ExtraBoldItalic.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Montserrat Light";
+  src: local("Montserrat Light"), url(../fonts/Montserrat-Light.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Montserrat SemiBold";
+  src: local("Montserrat SemiBold"), url(../fonts/Montserrat-SemiBold.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Montserrat SemiBoldItalic";
+  src: local("Montserrat SemiBoldItalic"), url(../fonts/Montserrat-SemiBoldItalic.ttf) format("truetype");
+}
+
+body {
+  font-family: $textFont !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: $grayBackgroud !important;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  // box-shadow: inset 0 0 5px grey; 
+  border-radius: 6px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #ccc; 
+  border-radius: 6px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #535c68; 
+}
